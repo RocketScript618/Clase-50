@@ -17,10 +17,10 @@ function setup(){
 createCanvas(windowWidth,windowHeight)
 
 //Crear bases superiores e inferiores
-bottomGround = createSprite(200,height,800,20);
+bottomGround = createSprite(width/2,height,width,20);
 bottomGround.visible = false;
 
-topGround = createSprite(200,0,800,20);
+topGround = createSprite(wdith/2,0,width,20);
 topGround.visible = false;
       
 //Crear globo      
@@ -38,7 +38,7 @@ function draw() {
         
 
   if(keyDown("space")) {
-
+  jump.play();
   balloon.velocityY= -2;
             
   }else{
